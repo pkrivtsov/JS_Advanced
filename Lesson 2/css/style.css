@@ -38,6 +38,10 @@ body {
   list-style-type: none;
   padding-top: 42px;
 }
+li {
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+}
 li:hover  {
   transform: scale(1.15);
 }
@@ -51,6 +55,12 @@ li:hover  {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+
+.products {
+  max-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .to-cart {
@@ -67,6 +77,14 @@ li:hover  {
   text-decoration: none;
   display: inline-block;
   margin-top: 71px;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+}
+
+.to-cart:hover{
+  background-color: transparent;
+  border-color: #fafafa;
+  color: #5A98D0;
 }
 
 .heading-mini {
@@ -110,7 +128,10 @@ li:hover  {
 
 .card {
   width: 359px;
+  min-width: 359px;
   padding: 44px 32px;
+  display: block;
+  margin-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFFFFF;
@@ -119,11 +140,11 @@ li:hover  {
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          margin-bottom: 25px
 }
 
 .card_img {
@@ -132,6 +153,8 @@ li:hover  {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 51px;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
 }
 
 .card:hover .card_img {
