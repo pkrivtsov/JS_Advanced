@@ -41,21 +41,4 @@ const renderPage = list => {
 
 renderPage(products);
 
-// // функция которая должна вешать на кноку В корзину id товара почему то не работатет. Что не так с count?
-// const data = [];
-// // в этот массив попадают товары, которые В корзину
-
-// document.querySelector('.card').addEventListener('click', event => {
-//     if (event.target.classList.contains('to-cart')) {
-//         let id = event.target.dataset['id'];
-//         if (data[id] !== undefined) {
-//             data[id]['count']++;
-//         }
-//         else {
-//             data[id] = products[id];
-//             data[id]['count'] = 1;
-//         }
-//         localStorage.setItem('products', JSON.stringify(data));
-//     }
-// })
 
